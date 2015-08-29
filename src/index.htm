@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="lib/codemirror/codemirror.css">
+    <script src="lib/codemirror/codemirror.js"></script>
+    <script src="lib/codemirror/closebrackets.js"></script>
+    <script src="lib/codemirror/javascript.js"></script>
+    
+    <style>
+        .source {
+            width: 450px;             
+            border-style: solid;
+            border-width: 1px;
+            border-color: grey;
+            float: left;
+        }
+        .console {
+            float: left;
+            padding-left: 30px; 
+        }
+    </style>
+</head>
+    <body>
+        <div>
+            <button id="run">
+                Run code</button>
+                
+            <small>* running on an array of 1,048,576 floats</small>
+            <br /><br/>
+        </div>
+        
+        <div>
+            <div class="source">
+                <textarea id="source" style="width:100%;">
+function (val) {
+        return Math.sqrt(val)
+            * Math.cos(val)
+            / Math.sin(val)
+            - Math.pow(val, val)
+            / Math.exp(val)
+            * Math.log(val)
+            / Math.tan(val)
+            * Math.cos(val)
+            / Math.sin(val)
+            - Math.pow(val, val)
+            / Math.exp(val)
+            * Math.log(val)
+            / Math.tan(val)
+            * Math.cos(val)
+            / Math.sin(val)
+            - Math.pow(val, val)
+            / Math.exp(val)
+            * Math.log(val)
+            / Math.tan(val);
+};
+        </textarea>
+            </div>
+            <div class="console">
+                <pre id="container"></pre>
+            </div>
+        </div>
+        
+
+        <script type="text/javascript" src="lib/three/three.js"></script>
+        <script type="text/javascript" src="gpgpu.js"></script>        
+        <script type="text/javascript" src="lib/jquery-micro-0.0.1.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+        
+    </body>
+</html>
