@@ -2,4 +2,4 @@
 
 Hardware accelerated general purpose computation in a web browser.
 
-DEMO: http://digitalsynapse.tk/webgl-gpgpu-demo/src/
+DEMO: http://dscode.cf/webgl-gpgpu-demo/src/
